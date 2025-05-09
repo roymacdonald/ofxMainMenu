@@ -12,7 +12,10 @@
 
 class ofxMainMenu{
 public:
-    static void addAppMenuItem(const std::string& title,  const std::string& keyShortcut, std::function<void()> lambda);
-    static void addMenu(const std::string& title);
+    static void addAppMenuItem(const std::string& item_name,  const std::string& keyShortcut, std::function<void()> lambda);
+    static void addMenu(const std::string& menu_name);
     static void addMenuItem(const std::string& menu_name, const std::string& item_name, const std::string& keyShortcut, std::function<void()> lambda);
+    static void addSeparatorToAppMenu();
+    static void addSeparatorToMenu(const std::string& menu_name);
+    
 };
